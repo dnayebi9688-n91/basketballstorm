@@ -1,0 +1,1216 @@
+<html lang="fa" dir="rtl"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بسکتبال استورم | Basketball Storm - پوشش حرفه‌ای NBA</title>
+    
+    <!-- SEO Meta Tags for Google Search Console -->
+    <meta name="description" content="سایت رسمی بسکتبال استورم - پوشش کامل و حرفه‌ای لیگ NBA، اخبار، آمار بازیکنان، نتایج زنده و چت هوشمند با هوش مصنوعی. مالکیت دانیال نایبی.">
+    <meta name="keywords" content="NBA, بسکتبال, بسکتبال استورم, Basketball Storm, نتایج NBA, آمار بازیکنان, اخبار بسکتبال, دانیال نایبی">
+    <meta name="author" content="دانیال نایبی">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="بسکتبال استورم | Basketball Storm">
+    <meta property="og:description" content="پوشش حرفه‌ای و کامل لیگ NBA با چت هوشمند هوش مصنوعی">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fa_IR">
+    <meta property="og:site_name" content="Basketball Storm">
+    
+    <!-- Structured Data (JSON-LD) for Google -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "بسکتبال استورم",
+        "alternateName": "Basketball Storm",
+        "url": "https://basketballstorm.ir",
+        "description": "سایت حرفه‌ای پوشش لیگ NBA با چت هوشمند",
+        "inLanguage": "fa-IR",
+        "publisher": {
+            "@type": "Person",
+            "name": "دانیال نایبی"
+        },
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://basketballstorm.ir/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-primary: #0a0e17;
+            --bg-secondary: #111827;
+            --bg-card: #1a2234;
+            --bg-hover: #243044;
+            --accent: #ff6b00;
+            --accent-light: #ff8c33;
+            --accent-dark: #e55a00;
+            --text-primary: #ffffff;
+            --text-secondary: #a0aec0;
+            --text-muted: #718096;
+            --border: #2d3748;
+            --success: #48bb78;
+            --danger: #f56565;
+            --nba-blue: #1d428a;
+            --nba-red: #c8102e;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Vazirmatn', system-ui, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #0a0e17 0%, #1a2234 100%);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(12px);
+        }
+
+        .header-top {
+            background: linear-gradient(90deg, var(--nba-blue), var(--nba-red));
+            padding: 6px 0;
+            font-size: 13px;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 72px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .logo-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--accent), #ff4500);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            box-shadow: 0 4px 15px rgba(255, 107, 0, 0.4);
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo-text h1 {
+            font-size: 22px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            background: linear-gradient(90deg, #fff, var(--accent-light));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .logo-text span {
+            font-size: 11px;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        nav {
+            display: flex;
+            gap: 8px;
+        }
+
+        nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            padding: 10px 18px;
+            border-radius: 10px;
+            font-weight: 500;
+            font-size: 15px;
+            transition: all 0.25s ease;
+        }
+
+        nav a:hover, nav a.active {
+            color: white;
+            background: var(--bg-hover);
+        }
+
+        nav a.active {
+            color: var(--accent);
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+            border: none;
+            transition: all 0.25s ease;
+            font-family: inherit;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+            color: white;
+            box-shadow: 0 4px 15px rgba(255, 107, 0, 0.35);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 107, 0, 0.45);
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--text-secondary);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        /* Hero */
+        .hero {
+            position: relative;
+            padding: 80px 24px 60px;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -20%;
+            width: 70%;
+            height: 150%;
+            background: radial-gradient(ellipse, rgba(255, 107, 0, 0.12) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .hero-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .hero-text h2 {
+            font-size: 52px;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .hero-text h2 span {
+            background: linear-gradient(90deg, var(--accent), #ff4500);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            color: var(--text-secondary);
+            margin-bottom: 32px;
+            max-width: 520px;
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 32px;
+            margin-top: 40px;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-item .number {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--accent);
+        }
+
+        .stat-item .label {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+
+        .hero-visual {
+            position: relative;
+        }
+
+        .live-score-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 28px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+        }
+
+        .live-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(245, 101, 101, 0.15);
+            color: var(--danger);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .live-badge::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: var(--danger);
+            border-radius: 50%;
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
+
+        .match-teams {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+        }
+
+        .team {
+            text-align: center;
+            flex: 1;
+        }
+
+        .team-logo {
+            width: 64px;
+            height: 64px;
+            background: var(--bg-hover);
+            border-radius: 50%;
+            margin: 0 auto 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            overflow: hidden;
+        }
+        .team-logo img {
+            width: 48px;
+            height: 48px;
+            object-fit: contain;
+        }
+        .team-card .emoji img {
+            width: 48px;
+            height: 48px;
+            object-fit: contain;
+        }
+        /* Standings */
+        .standings-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+        }
+        @media (max-width: 900px) {
+            .standings-container { grid-template-columns: 1fr; }
+        }
+        .standings-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            overflow: hidden;
+        }
+        .standings-table th {
+            background: var(--bg-hover);
+            padding: 14px 12px;
+            text-align: center;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-secondary);
+        }
+        .standings-table th:first-child,
+        .standings-table td:first-child {
+            text-align: right;
+            padding-right: 16px;
+        }
+        .standings-table td {
+            padding: 12px;
+            text-align: center;
+            border-top: 1px solid var(--border);
+            font-size: 14px;
+        }
+        .standings-table tr:hover td {
+            background: rgba(255,255,255,0.03);
+        }
+        .team-cell {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: flex-start;
+        }
+        .team-cell img {
+            width: 28px;
+            height: 28px;
+            object-fit: contain;
+        }
+        .conf-title {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .conf-title.east { color: #60a5fa; }
+        .conf-title.west { color: #f87171; }
+
+
+        .team-name {
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        .score {
+            font-size: 42px;
+            font-weight: 800;
+            padding: 0 20px;
+        }
+
+        .quarter-info {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 13px;
+            margin-bottom: 16px;
+        }
+
+        /* Sections */
+        .section {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 60px 24px;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 32px;
+        }
+
+        .section-header h3 {
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        .section-header a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 15px;
+        }
+
+        /* Cards Grid */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 24px;
+        }
+
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+        }
+
+        .card-img {
+            height: 160px;
+            background: linear-gradient(135deg, #1a2234, #2d3748);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            position: relative;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .card-tag {
+            display: inline-block;
+            background: rgba(255, 107, 0, 0.15);
+            color: var(--accent);
+            padding: 3px 10px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .card-title {
+            font-size: 17px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+
+        .card-meta {
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        /* Teams Section */
+        .teams-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 16px;
+        }
+
+        .team-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 20px 12px;
+            text-align: center;
+            transition: all 0.25s ease;
+            cursor: pointer;
+        }
+
+        .team-card:hover {
+            border-color: var(--accent);
+            background: var(--bg-hover);
+        }
+
+        .team-card .emoji {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .team-card .name {
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        /* AI Chat Widget */
+        .chat-widget {
+            position: fixed;
+            bottom: 28px;
+            left: 28px;
+            z-index: 9999;
+        }
+
+        .chat-toggle {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent), #ff4500);
+            border: none;
+            color: white;
+            font-size: 28px;
+            cursor: pointer;
+            box-shadow: 0 8px 25px rgba(255, 107, 0, 0.45);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .chat-toggle:hover {
+            transform: scale(1.08);
+        }
+
+        .chat-window {
+            position: absolute;
+            bottom: 80px;
+            left: 0;
+            width: 380px;
+            height: 520px;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+            display: none;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .chat-window.open {
+            display: flex;
+            animation: slideUp 0.3s ease;
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .chat-header {
+            background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+            padding: 16px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .chat-header-info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .chat-avatar {
+            width: 40px;
+            height: 40px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+        }
+
+        .chat-header h4 {
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .chat-header p {
+            font-size: 12px;
+            opacity: 0.9;
+        }
+
+        .chat-close {
+            background: transparent;
+            border: none;
+            color: white;
+            font-size: 22px;
+            cursor: pointer;
+            opacity: 0.8;
+        }
+
+        .chat-messages {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .message {
+            max-width: 85%;
+            padding: 12px 16px;
+            border-radius: 16px;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .message.bot {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            align-self: flex-start;
+            border-bottom-right-radius: 4px;
+        }
+
+        .message.user {
+            background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+            align-self: flex-end;
+            border-bottom-left-radius: 4px;
+        }
+
+        .chat-input-area {
+            padding: 16px;
+            border-top: 1px solid var(--border);
+            display: flex;
+            gap: 10px;
+        }
+
+        .chat-input {
+            flex: 1;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 12px 16px;
+            color: white;
+            font-family: inherit;
+            font-size: 14px;
+            outline: none;
+        }
+
+        .chat-input:focus {
+            border-color: var(--accent);
+        }
+
+        .chat-send {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            background: var(--accent);
+            border: none;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .chat-send:hover {
+            background: var(--accent-dark);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border);
+            padding: 60px 24px 30px;
+            margin-top: 40px;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+        }
+
+        .footer-brand h3 {
+            font-size: 22px;
+            margin-bottom: 12px;
+            background: linear-gradient(90deg, #fff, var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .footer-brand p {
+            color: var(--text-secondary);
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+
+        .owner-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--bg-card);
+            padding: 8px 14px;
+            border-radius: 10px;
+            font-size: 13px;
+            border: 1px solid var(--border);
+        }
+
+        .footer-col h4 {
+            font-size: 15px;
+            margin-bottom: 16px;
+            color: white;
+        }
+
+        .footer-col a {
+            display: block;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+            margin-bottom: 10px;
+            transition: color 0.2s;
+        }
+
+        .footer-col a:hover {
+            color: var(--accent);
+        }
+
+        .footer-bottom {
+            max-width: 1400px;
+            margin: 40px auto 0;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            .hero-text h2 {
+                font-size: 38px;
+            }
+            .footer-content {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+            }
+            .hero-text h2 {
+                font-size: 32px;
+            }
+            .chat-window {
+                width: calc(100vw - 40px);
+                left: -10px;
+            }
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-top">
+            🏀 پوشش زنده و حرفه‌ای لیگ NBA • مالکیت: دانیال نایبی
+        </div>
+        <div class="nav-container">
+            <a href="/" class="logo">
+                <div class="logo-icon">⚡</div>
+                <div class="logo-text">
+                    <h1>بسکتبال استورم</h1>
+                    <span>Basketball Storm</span>
+                </div>
+            </a>
+            
+            <nav>
+                <a href="#" class="active">خانه</a>
+                <a href="#scores">نتایج زنده</a>
+                <a href="#news">اخبار</a>
+                <a href="#teams">تیم‌ها</a>
+                <a href="#standings">جدول</a>
+                <a href="#stats">آمار</a>
+            </nav>
+            
+            <div class="header-actions">
+                <button class="btn btn-outline">ورود</button>
+                <button class="btn btn-primary">عضویت</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h2>دنیای حرفه‌ای<br><span>بسکتبال NBA</span></h2>
+                <p>پوشش کامل و لحظه‌ای لیگ بسکتبال حرفه‌ای آمریکا با آمار دقیق، اخبار اختصاصی و چت هوشمند هوش مصنوعی.</p>
+                <div style="display: flex; gap: 14px;">
+                    <button class="btn btn-primary" onclick="openChat()">💬 گفتگو با هوش مصنوعی</button>
+                    <button class="btn btn-outline">مشاهده نتایج زنده</button>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="number">۳۰</div>
+                        <div class="label">تیم NBA</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="number">۱,۲۳۰+</div>
+                        <div class="label">بازی فصل</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="number">۲۴/۷</div>
+                        <div class="label">پوشش زنده</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="live-score-card">
+                    <div class="live-badge">زنده • کوارتر سوم</div>
+                    <div class="match-teams">
+                        <div class="team">
+                            <div class="team-logo"><img src="https://a.espncdn.com/i/teamlogos/nba/500/lal.png" alt="Lakers"></div>
+                            <div class="team-name">لیکرز</div>
+                        </div>
+                        <div class="score">۸۹ - ۹۴</div>
+                        <div class="team">
+                            <div class="team-logo"><img src="https://a.espncdn.com/i/teamlogos/nba/500/bos.png" alt="Celtics"></div>
+                            <div class="team-name">سلتیکس</div>
+                        </div>
+                    </div>
+                    <div class="quarter-info">زمان باقی‌مانده: ۰۴:۲۱</div>
+                    <div style="background: var(--bg-hover); border-radius: 10px; padding: 12px; font-size: 13px; color: var(--text-secondary);">
+                        <strong style="color: var(--accent);">لبرون جیمز:</strong> ۲۸ امتیاز • ۹ ریباند • ۶ پاس‌گل
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="section" id="news">
+        <div class="section-header">
+            <h3>آخرین اخبار NBA</h3>
+            <a href="#">مشاهده همه ←</a>
+        </div>
+        <div class="cards-grid">
+            <article class="card">
+                <div class="card-img">🏀</div>
+                <div class="card-body">
+                    <span class="card-tag">اخبار ویژه</span>
+                    <h4 class="card-title">لبرون جیمز به مرز ۴۰,۰۰۰ امتیاز نزدیک شد</h4>
+                    <p class="card-meta">۲ ساعت پیش • بخش اخبار</p>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card-img">🔥</div>
+                <div class="card-body">
+                    <span class="card-tag">آنالیز</span>
+                    <h4 class="card-title">تحلیل عملکرد استیون کری در فصل جدید</h4>
+                    <p class="card-meta">۵ ساعت پیش • تحلیل تخصصی</p>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card-img">🏆</div>
+                <div class="card-body">
+                    <span class="card-tag">قهرمانی</span>
+                    <h4 class="card-title">مسیر دشوار بوستون سلتیکس به سمت دفاع از عنوان</h4>
+                    <p class="card-meta">دیروز • گزارش ویژه</p>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card-img">📊</div>
+                <div class="card-body">
+                    <span class="card-tag">آمار</span>
+                    <h4 class="card-title">رتبه‌بندی بهترین بازیکنان فصل تا این لحظه</h4>
+                    <p class="card-meta">دیروز • آمار و ارقام</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Teams Section -->
+    <section class="section" id="teams">
+        <div class="section-header">
+            <h3>تیم‌های NBA</h3>
+            <a href="#">همه تیم‌ها ←</a>
+        </div>
+        <div class="teams-grid">
+            <div class="team-card"><div class="emoji"><img src="https://a.espncdn.com/i/teamlogos/nba/500/lal.png" alt="لیکرز"></div><div class="name">لیکرز</div></div>
+            <div class="team-card"><div class="emoji"><img src="https://a.espncdn.com/i/teamlogos/nba/500/bos.png" alt="سلتیکس"></div><div class="name">سلتیکس</div></div>
+            <div class="team-card"><div class="emoji"><img src="https://a.espncdn.com/i/teamlogos/nba/500/gs.png" alt="واریرز"></div><div class="name">واریرز</div></div>
+            <div class="team-card"><div class="emoji"><img src="https://a.espncdn.com/i/teamlogos/nba/500/chi.png" alt="شیکاگو بولز"></div><div class="name">شیکاگو بولز</div></div>
+            <div class="team-card"><div class="emoji"><img src="https://a.espncdn.com/i/teamlogos/nba/500/bkn.png" alt="نتس"></div><div class="name">نتس</div></div>
+            <div class="team-card"><div class="emoji"><img src="https://a.espncdn.com/i/teamlogos/nba/500/phx.png" alt="فینیکس سانز"></div><div class="name">فینیکس سانز</div></div>
+            <div class="team-card"><div class="emoji"><img src="https://a.espncdn.com/i/teamlogos/nba/500/den.png" alt="دنور ناگتس"></div><div class="name">دنور ناگتس</div></div>
+            <div class="team-card"><div class="emoji"><img src="https://a.espncdn.com/i/teamlogos/nba/500/mia.png" alt="میامی هیت"></div><div class="name">میامی هیت</div></div>
+            <div class="team-card"><div class="emoji"><img src="https://a.espncdn.com/i/teamlogos/nba/500/dal.png" alt="دالاس ماوریکس"></div><div class="name">دالاس ماوریکس</div></div>
+            <div class="team-card"><div class="emoji"><img src="https://a.espncdn.com/i/teamlogos/nba/500/mil.png" alt="میلواکی باکس"></div><div class="name">میلواکی باکس</div></div>
+        </div>
+    </section>
+
+
+    <!-- Standings Section -->
+    <section class="section" id="standings">
+        <div class="section-header">
+            <h3>جدول رده‌بندی لیگ NBA</h3>
+            <a href="#">مشاهده کامل ←</a>
+        </div>
+        <div class="standings-container">
+            <!-- East -->
+            <div>
+                <div class="conf-title east">🔵 کنفرانس شرق</div>
+                <table class="standings-table">
+                    <thead>
+                        <tr>
+                            <th>تیم</th>
+                            <th>برد</th>
+                            <th>باخت</th>
+                            <th>درصد</th>
+                            <th>GB</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><div class="team-cell"><img src="https://a.espncdn.com/i/teamlogos/nba/500/bos.png" alt="BOS"><span>سلتیکس</span></div></td>
+                            <td>۸</td><td>۲</td><td>.۸۰۰</td><td>—</td>
+                        </tr>
+                        <tr>
+                            <td><div class="team-cell"><img src="https://a.espncdn.com/i/teamlogos/nba/500/mil.png" alt="MIL"><span>باکس</span></div></td>
+                            <td>۷</td><td>۳</td><td>.۷۰۰</td><td>۱</td>
+                        </tr>
+                        <tr>
+                            <td><div class="team-cell"><img src="https://a.espncdn.com/i/teamlogos/nba/500/chi.png" alt="CHI"><span>بولز</span></div></td>
+                            <td>۶</td><td>۴</td><td>.۶۰۰</td><td>۲</td>
+                        </tr>
+                        <tr>
+                            <td><div class="team-cell"><img src="https://a.espncdn.com/i/teamlogos/nba/500/mia.png" alt="MIA"><span>هیت</span></div></td>
+                            <td>۵</td><td>۵</td><td>.۵۰۰</td><td>۳</td>
+                        </tr>
+                        <tr>
+                            <td><div class="team-cell"><img src="https://a.espncdn.com/i/teamlogos/nba/500/bkn.png" alt="BKN"><span>نتس</span></div></td>
+                            <td>۴</td><td>۶</td><td>.۴۰۰</td><td>۴</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- West -->
+            <div>
+                <div class="conf-title west">🔴 کنفرانس غرب</div>
+                <table class="standings-table">
+                    <thead>
+                        <tr>
+                            <th>تیم</th>
+                            <th>برد</th>
+                            <th>باخت</th>
+                            <th>درصد</th>
+                            <th>GB</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><div class="team-cell"><img src="https://a.espncdn.com/i/teamlogos/nba/500/gs.png" alt="GSW"><span>واریرز</span></div></td>
+                            <td>۸</td><td>۲</td><td>.۸۰۰</td><td>—</td>
+                        </tr>
+                        <tr>
+                            <td><div class="team-cell"><img src="https://a.espncdn.com/i/teamlogos/nba/500/den.png" alt="DEN"><span>ناگتس</span></div></td>
+                            <td>۷</td><td>۳</td><td>.۷۰۰</td><td>۱</td>
+                        </tr>
+                        <tr>
+                            <td><div class="team-cell"><img src="https://a.espncdn.com/i/teamlogos/nba/500/lal.png" alt="LAL"><span>لیکرز</span></div></td>
+                            <td>۶</td><td>۴</td><td>.۶۰۰</td><td>۲</td>
+                        </tr>
+                        <tr>
+                            <td><div class="team-cell"><img src="https://a.espncdn.com/i/teamlogos/nba/500/phx.png" alt="PHX"><span>سانز</span></div></td>
+                            <td>۵</td><td>۵</td><td>.۵۰۰</td><td>۳</td>
+                        </tr>
+                        <tr>
+                            <td><div class="team-cell"><img src="https://a.espncdn.com/i/teamlogos/nba/500/dal.png" alt="DAL"><span>ماوریکس</span></div></td>
+                            <td>۴</td><td>۶</td><td>.۴۰۰</td><td>۴</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Preview -->
+    <section class="section" id="stats">
+        <div class="section-header">
+            <h3>برترین‌های فصل</h3>
+            <a href="#">آمار کامل ←</a>
+        </div>
+        <div class="cards-grid">
+            <div class="card">
+                <div class="card-body" style="padding: 24px;">
+                    <div style="font-size: 13px; color: var(--accent); font-weight: 600; margin-bottom: 8px;">بیشترین امتیاز</div>
+                    <div style="font-size: 20px; font-weight: 700; margin-bottom: 4px;">لوکا دونچیچ</div>
+                    <div style="font-size: 28px; font-weight: 800; color: var(--accent);">۳۳.۴</div>
+                    <div style="font-size: 13px; color: var(--text-muted);">امتیاز میانگین</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body" style="padding: 24px;">
+                    <div style="font-size: 13px; color: var(--accent); font-weight: 600; margin-bottom: 8px;">بیشترین پاس‌گل</div>
+                    <div style="font-size: 20px; font-weight: 700; margin-bottom: 4px;">تایریز هالیبرتون</div>
+                    <div style="font-size: 28px; font-weight: 800; color: var(--accent);">۱۱.۲</div>
+                    <div style="font-size: 13px; color: var(--text-muted);">پاس‌گل میانگین</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body" style="padding: 24px;">
+                    <div style="font-size: 13px; color: var(--accent); font-weight: 600; margin-bottom: 8px;">بیشترین ریباند</div>
+                    <div style="font-size: 20px; font-weight: 700; margin-bottom: 4px;">دومانتاس سابونیس</div>
+                    <div style="font-size: 28px; font-weight: 800; color: var(--accent);">۱۳.۱</div>
+                    <div style="font-size: 13px; color: var(--text-muted);">ریباند میانگین</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>بسکتبال استورم</h3>
+                <p>مرجع حرفه‌ای پوشش لیگ NBA به زبان فارسی. نتایج زنده، آمار دقیق و تحلیل‌های تخصصی.</p>
+                <div class="owner-badge">
+                    👤 مالکیت: <strong>دانیال نایبی</strong>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>دسترسی سریع</h4>
+                <a href="#">نتایج زنده</a>
+                <a href="#">جدول رده‌بندی</a>
+                <a href="#">آمار بازیکنان</a>
+                <a href="#">تقویم بازی‌ها</a>
+            </div>
+            <div class="footer-col">
+                <h4>تیم‌ها</h4>
+                <a href="#">کنفرانس شرق</a>
+                <a href="#">کنفرانس غرب</a>
+                <a href="#">همه تیم‌ها</a>
+            </div>
+            <div class="footer-col">
+                <h4>ارتباط با ما</h4>
+                <a href="#">درباره ما</a>
+                <a href="#">تماس با ما</a>
+                <a href="#">قوانین سایت</a>
+                <a href="#">حریم خصوصی</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div>© ۱۴۰۴ بسکتبال استورم • تمامی حقوق محفوظ است</div>
+            <div>آماده برای Google Search Console ✓</div>
+        </div>
+    </footer>
+
+    <!-- AI Chat Widget -->
+    <div class="chat-widget">
+        <div class="chat-window" id="chatWindow">
+            <div class="chat-header">
+                <div class="chat-header-info">
+                    <div class="chat-avatar">🤖</div>
+                    <div>
+                        <h4>استورم AI</h4>
+                        <p>دستیار هوشمند بسکتبال</p>
+                    </div>
+                </div>
+                <button class="chat-close" onclick="closeChat()">×</button>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <div class="message bot">
+                    سلام! من <strong>استورم AI</strong> هستم 🏀<br>
+                    درباره NBA، بازیکنان، تیم‌ها یا آمار هر سوالی داری بپرس!
+                </div>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" class="chat-input" id="chatInput" placeholder="سوالت رو بنویس..." onkeypress="handleKeyPress(event)">
+                <button class="chat-send" onclick="sendMessage()">➤</button>
+            </div>
+        </div>
+        <button class="chat-toggle" onclick="toggleChat()" title="چت با هوش مصنوعی">💬</button>
+    </div>
+
+    <script>
+        // Chat functionality
+        const chatWindow = document.getElementById('chatWindow');
+        const chatMessages = document.getElementById('chatMessages');
+        const chatInput = document.getElementById('chatInput');
+
+        function toggleChat() {
+            chatWindow.classList.toggle('open');
+            if (chatWindow.classList.contains('open')) {
+                chatInput.focus();
+            }
+        }
+
+        function openChat() {
+            chatWindow.classList.add('open');
+            chatInput.focus();
+        }
+
+        function closeChat() {
+            chatWindow.classList.remove('open');
+        }
+
+        function handleKeyPress(e) {
+            if (e.key === 'Enter') sendMessage();
+        }
+
+        function sendMessage() {
+            const text = chatInput.value.trim();
+            if (!text) return;
+
+            // Add user message
+            const userMsg = document.createElement('div');
+            userMsg.className = 'message user';
+            userMsg.textContent = text;
+            chatMessages.appendChild(userMsg);
+            chatInput.value = '';
+
+            // Simulate AI thinking
+            setTimeout(() => {
+                const botMsg = document.createElement('div');
+                botMsg.className = 'message bot';
+                botMsg.innerHTML = getAIResponse(text);
+                chatMessages.appendChild(botMsg);
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            }, 800);
+
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        function getAIResponse(question) {
+            const q = question.toLowerCase();
+            
+            if (q.includes('لبرون') || q.includes('جیمز')) {
+                return 'لبرون جیمز یکی از بزرگ‌ترین بازیکنان تاریخ NBA است. او بیش از ۴۰,۰۰۰ امتیاز در کارنامه دارد و ۴ بار قهرمان NBA شده است. در حال حاضر برای لس‌آنجلس لیکرز بازی می‌کند.';
+            }
+            if (q.includes('کری') || q.includes('استیون')) {
+                return 'استیون کری بهترین شوت‌زن سه‌نقطه‌ای تاریخ NBA محسوب می‌شود. او با گلدن استیت واریرز ۴ بار قهرمان شده و ۲ بار MVP فصل شده است.';
+            }
+            if (q.includes('قهرمان') || q.includes('عنوان')) {
+                return 'در فصل گذشته بوستون سلتیکس قهرمان NBA شد. آن‌ها در فینال مقابل دالاس ماوریکس پیروز شدند.';
+            }
+            if (q.includes('لیکرز')) {
+                return 'لس‌آنجلس لیکرز یکی از پرافتخارترین تیم‌های تاریخ NBA با ۱۷ قهرمانی است. ستاره‌های فعلی‌شان لبرون جیمز و آنتونی دیویس هستند.';
+            }
+            if (q.includes('سلام') || q.includes('درود')) {
+                return 'سلام! خوش اومدی به بسکتبال استورم 🏀 چطور می‌تونم کمکت کنم؟';
+            }
+            
+            return 'سوال جالبی پرسیدی! در حال حاضر من روی اطلاعات کلیدی NBA آموزش دیدم. می‌تونی درباره بازیکنان معروف، تیم‌ها، آمار یا تاریخچه قهرمانی‌ها بپرسی. سوال دقیق‌تری داری؟';
+        }
+    </script>
+
+
+</body></html>
